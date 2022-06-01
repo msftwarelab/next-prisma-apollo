@@ -1,0 +1,7 @@
+  #import from '../fragments/login.gql'
+
+  mutation signInMutation($email: String!, $password: String!) {
+    signinUser( email: $email, password: $password ) {
+      email
+    }
+  }
